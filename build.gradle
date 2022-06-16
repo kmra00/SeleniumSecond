@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation(
+            ['org.seleniumhq.selenium:selenium-java:4.1.4'],
+            ['io.github.bonigarcia:webdrivermanager:5.1.1'],
+            ['junit:junit:4.13.2']
+    )
+}
+
+test {
+    useJUnitPlatform()
+}
